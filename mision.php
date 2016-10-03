@@ -17,52 +17,35 @@
 <body>
 
 <header class="bar bar-nav">
-	<h1 class="title">Cátalogo de Juegos</h1>
+	<h1 class="title">Misión</h1>
 </header>
 
-  
-</div>
-<article class="content" data-role="content" style="background:url('../imagenes/fondo5.jpg');color:white; 
+
+<article class="content" data-role="content" style="background:url('../imagenes/fondo4.jpg');color:white; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;">
 			
-				<div class="aa-product-catg-body">
-                       <ul class="aa-product-catg">
-                        <?php
-                        
-                        foreach ($variable as $value) 
-                          {
-                  					
-                            echo '<!-- start single product item -->
-                                      <li>
-                                        <figure>
-                                          <a class="aa-product-img" href="#"><img style="width: 150px; height: 300px;" src="http://pymesv.com/datos05w/'.$value->imagen.'" alt="game cover img"></a>
-                                          <a class="aa-add-card-btn"href="javascript:void();" data="'.htmlspecialchars(json_encode($value), ENT_QUOTES, 'UTF-8'). '"><span class="fa fa-shopping-cart"></span>Agregar al carrito</a>
-                                          <figcaption>
-                                            <h4 class="aa-product-title"><a href="#">'.$value->nombre.'</a></h4>
-                                            <span class="aa-product-price">'.$value->precio.'</span>
-                                            
-                                          </figcaption>
-                                        </figure>                         
-                                        <!-- product badge -->
-                                        <span class="aa-badge aa-sale" href="#">Comprar ahora!</span>
-                                      </li>';
-                          }
-                        ?>
-                </ul>
-              </div>
-
-			 
+			 <header data-role="header">
+        <h1>Misión</h1>
+      </header>
+      <article data-role="content">
+        <br>
+        <br>
+        <br>
+     <p>Nuestra Misión:
+      Satisfacer las necesidades de las personas interesadas en los videojuegos y articulos de novedad, 
+      prestandoles el mejor servicio por parte de todo el personal de la empresa, y manteniendo siempre 
+      actualizado nuestro catálogo de juegos y articulos para las diferentes plataformas.</p>
+      <br>
+      <br>
+      <br>
 			</article>
 
 
-
-
-
-<div class="bar bar-tab ">
-	<a href="#" class="tab-item">
+<div class="bar bar-tab">
+	<a href="index.php" class="tab-item">
 		<span class="icon icon-bars"></span>
 		<span class="tab-label">
 			Home
@@ -73,7 +56,7 @@
 			Visión
 		</span>
 	</a>
-	<a href="mision.php" class="tab-item">
+	<a href="#" class="tab-item">
 		<span class="tab-label">
 			Misión
 		</span>
